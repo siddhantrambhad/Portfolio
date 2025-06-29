@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Blogs</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi, I'm <span>Siddhant Rambhad</span><br> From VNIT</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Self-driven and curious undergraduate pursuing B.Tech in Electronics and
+ Communication Engineering at VNIT Nagpur. Passionate about
+ programming, full-stack development, and computer vision, with hands-on
+ experience in multiple personal tech projects. Seeking a challenging
+ internship opportunity to apply and further develop my technical skills in a
+ real-world IT environment.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Co-Curriculars')">Leadership</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>Javascript</span><br></li>
+                        <li><span>Bootstrap</span><br></li>
+                        <li><span>jQuery</span><br></li>
+                        <li><span>Node.js</span><br></li>
+                        <li><span>Express.js</span><br></li>
+                        <li><span>SQL</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Co-Curriculars">
+                    <ul>
+                        <li><span>Event Manager - AXIS Technical Fest, VNIT</span><br>  Planned and executed 10+ technical events with 100+ participants, enhancing engagement and outreach.</li>
+                        <li><span>Academic Secretary</span><br>Facilitated academic support and coordination for 120+ students, enabling efficient faculty-student communication.</li>
+                        <li><span>Anchor, VNIT</span><br>Anchored the Distinguished Alumni Awards 2024 at VNIT Nagpur, engaging 500+ attendees including alumni,
+ faculty, and dignitaries.</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br> Secured 98.9 percentile in JEE Main with AIR 10902</li>
+                        <li><span>2020</span><br>Ranked 3rd in district and 1st in school (SSC 2020)</li>
+                        <li><span>2020</span><br>Featured in a topper's YouTube interview</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026</span><br>B.Tech from VNIT in ECE</li>
+                        <li><span>2022</span><br>HSC from Dharampeth MP Deo College Nagpur</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> Grilli Restaurant Website</h3>
+                    <p>Welcome to the official website of Grilli Restaurant — where taste meets elegance!
+This project is a modern and responsive restaurant website designed to showcase Grilli's signature dishes, special offers, and warm ambiance.
+
+</p>
+                    <a href="https://siddhantrambhad.github.io/Grilli/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>YOLOv3 Object Detection</h3>
+                    <p>Created a real-time object detection system using YOLOv3 and OpenCV with ¡50ms processing speed</p>
+                    <a href="https://github.com/siddhantrambhad/YOLO-Object-Detection"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Simon Game</h3>
+                    <p>Developed a basic Simon Game Using HTML , CSS and JavaScript.</p>
+                    <a href="https://siddhantrambhad.github.io/Simon-Game/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> siddhantr43@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9422950599</p>
+                <div class="social-icons">
+                   
+                    
+                    <a href="https://www.instagram.com/siddhantrambhad/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/siddhant-rambhad-112935282/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/siddhantrambhad"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
